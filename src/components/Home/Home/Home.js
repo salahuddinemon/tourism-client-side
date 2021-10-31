@@ -1,17 +1,17 @@
 import React from 'react';
-import About from '../About/About';
 import Blog from '../Blog/Blog';
-import Contact from '../Contact/Contact';
-import Faq from '../Faq/Faq';
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
+import FeaturedService from '../FeaturedService/FeaturedService';
 import Services from '../Services/Services';
+import Contact from '../Contact/Contact';
+import About from '../About/About';
 
 const Home = () => {
     return (
         <div>
             <Services></Services>
             <Blog></Blog>
+            <FeaturedService></FeaturedService>
+            <About></About>
             <Contact></Contact>
         </div>
     );

@@ -1,17 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import img from '../../../images/services img/1.png'
 
 const Blog = () => {
     return (
-        <div>
-            <h2 className="text-pink-600 text-5xl font-bold my-16">Blog List</h2>
+        <div className="mx-10">
+            <h2 className="text-pink-600 text-5xl font-bold my-20">Blog List
+                <hr />
+            </h2>
             <main className="mt-12">
                 {/* <!-- recent posts --> */}
                 <div className="flex mt-16 mb-4 px-4 lg:px-0 items-center justify-between">
                     <h2 className="font-bold text-3xl">Latest news</h2>
-                    <a href="#blog" className="bg-gray-200 hover:bg-green-200 text-gray-800 px-3 py-1 rounded cursor-pointer">
+                    <Link to="/blog" className="bg-gray-200 hover:bg-green-200 text-gray-800 px-3 py-1 rounded cursor-pointer">
                         View all
-                    </a>
+                    </Link>
                 </div>
                 <div className="block space-x-0 lg:flex lg:space-x-6">
 
