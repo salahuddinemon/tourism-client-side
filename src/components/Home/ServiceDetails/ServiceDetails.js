@@ -3,9 +3,9 @@ import { useParams } from 'react-router';
 
 const ServiceDetails = () => {
     const { serviceId } = useParams();
-    const { service, setService } = useState([]);
+    const [service, setService] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/services`)
+        fetch(`https://macabre-dracula-42260.herokuapp.com/services/${serviceId}`)
             .then(res => res.json())
             .then(data => setService(data))
     }, [])
@@ -15,7 +15,7 @@ const ServiceDetails = () => {
     return (
         <div>
             <h3>{serviceId}</h3>
-            {/* <h2>{services.imageUrl}</h2> */}
+            <h2>{service.packageName}</h2>
             {/* <h2>{serviceDatailInfo[0]?.packageName}</h2> */}
         </div>
     );

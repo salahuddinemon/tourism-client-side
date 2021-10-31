@@ -18,6 +18,7 @@ const useFirebase = () => {
     const logOut = () => {
         signOut(auth)
             .then(() => {
+                setUser('')
 
             })
     }
@@ -25,7 +26,7 @@ const useFirebase = () => {
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
             if (user) {
-                setUser(user)
+                setUser(user);
             }
         });
 

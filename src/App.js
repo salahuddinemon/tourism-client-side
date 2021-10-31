@@ -36,9 +36,9 @@ function App() {
             <Route path="/servicedetails/:serviceId">
               <ServiceDetails></ServiceDetails>
             </Route>
-            <Route path="/addservice">
+            <PrivateRoute path="/addservice">
               <AddService></AddService>
-            </Route>
+            </PrivateRoute>
             <Route path="/blog">
               <Blog></Blog>
             </Route>
@@ -48,12 +48,12 @@ function App() {
             <Route path="/contact">
               <Contact></Contact>
             </Route>
-            <Route path='/myservices'>
+            <PrivateRoute path='/myservices'>
               <MyServices></MyServices>
-            </Route>
-            <Route path='/allservices'>
+            </PrivateRoute>
+            <PrivateRoute path='/allservices'>
               <ManageALlServices></ManageALlServices>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login></Login>
             </Route>
