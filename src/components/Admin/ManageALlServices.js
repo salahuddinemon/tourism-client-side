@@ -11,6 +11,7 @@ const ManageALlServices = () => {
     }, [])
     return (
         <div className="flex item-center">
+            <h1 className="text-yellow-900 font-bold text-2xl tracking-tight mb-2" >Display All Services</h1>
             <table className="table p-4 bg-white shadow rounded-lg">
                 <thead>
                     <tr>

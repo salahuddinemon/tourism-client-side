@@ -30,7 +30,7 @@ const MyServices = () => {
     }
     return (
         <div className="container py-5">
-
+            <h1 className="text-yellow-900 font-bold text-2xl tracking-tight mb-2" >Display My Services</h1>
             <table className="table p-4 bg-white shadow rounded-lg">
                 <thead>
                     <tr>
