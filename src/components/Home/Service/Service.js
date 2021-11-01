@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//Display all our services
 const Service = ({ service }) => {
     const { _id, imageUrl, packageName, journeyPlace, price, JourneyDays } = service;
 

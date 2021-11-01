@@ -5,7 +5,7 @@ import banner from '../../../images/travel41.jpg'
 import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
-
+//Display Navigation
 const Navbar = () => {
     const { user, logOut } = useAuth();
     return (
@@ -102,6 +102,8 @@ const Navbar = () => {
                             </nav>
                         </div>
                     </div>}
+
+                    {/* Display Banner  */}
                     <div>
                         <img src={banner} alt="" />
                     </div>

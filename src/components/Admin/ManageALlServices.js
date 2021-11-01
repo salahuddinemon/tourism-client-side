@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Display all users data 
 const ManageALlServices = () => {
     return (
         <div>

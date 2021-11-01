@@ -2,6 +2,8 @@ import axios from 'axios';
 import React from 'react';
 import { useForm } from "react-hook-form";
 
+
+//Adding Services
 const AddService = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {

@@ -3,8 +3,9 @@ import { useParams } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
+import Login from '../Login/Login';
 
-
+//Display Service Details into Left side
 const ServiceDetails = () => {
     const { user } = useAuth();
     const { serviceId } = useParams();
@@ -57,6 +58,7 @@ const ServiceDetails = () => {
                 </div>
             </div>
 
+            {/* Display Order form into right side */}
             <div>
                 <section className="py-1 bg-blueGray-50">
                     <div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
@@ -155,6 +157,7 @@ const ServiceDetails = () => {
                                         </div>
                                     </div>
                                     <hr className="mt-6 border-b-1 border-blueGray-300 mb-6" />
+
                                     <input type="Submit" defaultValue="Complete Order" className="bg-blue-600 py-4 px-4 text-white w-full rounded-lg font-semibold text-center focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in" />
                                 </form>
                             </div>

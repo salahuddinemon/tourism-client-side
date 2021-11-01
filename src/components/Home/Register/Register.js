@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Setting & Display Registration page 
 const Register = () => {
     return (
         <div>
