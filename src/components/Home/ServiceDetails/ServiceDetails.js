@@ -10,12 +10,16 @@ const ServiceDetails = () => {
     const { serviceId } = useParams();
     const [service, setService] = useState([]);
 
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://macabre-dracula-42260.herokuapp.com/orders', data)
             .then(res => {
                 console.log(res);
+                if (res.data.insertedId) {
+                    alert(' Your Booking is Successfully')
+                    reset();
+                }
             })
     };
 
@@ -151,7 +155,6 @@ const ServiceDetails = () => {
                                         </div>
                                     </div>
                                     <hr className="mt-6 border-b-1 border-blueGray-300 mb-6" />
-
                                     <input type="Submit" defaultValue="Complete Order" className="bg-blue-600 py-4 px-4 text-white w-full rounded-lg font-semibold text-center focus:outline-none focus:ring-2 focus:ring-offset-2 hover:bg-blue-700 focus:ring-blue-500 focus:ring-offset-blue-200 text-white w-full transition ease-in" />
                                 </form>
                             </div>
