@@ -6,6 +6,7 @@ import About from './components/Home/About/About';
 import AddService from './components/Home/AddService/AddService';
 import Blog from './components/Home/Blog/Blog';
 import Contact from './components/Home/Contact/Contact';
+import Faq from './components/Home/Faq/Faq';
 import Footer from './components/Home/Footer/Footer';
 import Header from './components/Home/Header/Header';
 import Home from './components/Home/Home/Home';
@@ -42,9 +43,9 @@ function App() {
             <Route path="/blog">
               <Blog></Blog>
             </Route>
-            <Route path="/about">
+            <PrivateRoute path="/about">
               <About></About>
-            </Route>
+            </PrivateRoute>
             <Route path="/contact">
               <Contact></Contact>
             </Route>
@@ -59,6 +60,9 @@ function App() {
             </Route>
             <Route path="/register">
               <Register></Register>
+            </Route>
+            <Route path="/faq">
+              <Faq></Faq>
             </Route>
             <Route path="*">
               <Notfound></Notfound>
