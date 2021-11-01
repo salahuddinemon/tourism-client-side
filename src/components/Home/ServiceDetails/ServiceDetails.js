@@ -3,24 +3,23 @@ import { useParams } from 'react-router';
 import useAuth from '../../../hooks/useAuth';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
-import Login from '../Login/Login';
 
 //Display Service Details into Left side
 const ServiceDetails = () => {
     const { user } = useAuth();
     const { serviceId } = useParams();
     const [service, setService] = useState([]);
-
     const { register, handleSubmit, reset } = useForm();
+
     const onSubmit = data => {
         console.log(data);
         axios.post('https://macabre-dracula-42260.herokuapp.com/orders', data)
             .then(res => {
-                console.log(res);
                 if (res.data.insertedId) {
-                    alert(' Your Booking is Successfully')
+                    alert('order Completed Succesfully')
                     reset();
                 }
+
             })
     };
 

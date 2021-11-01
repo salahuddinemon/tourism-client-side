@@ -23,35 +23,35 @@ const AddService = () => {
                 <hr />
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="packageName">Packege Name</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="packageName">Packege Name</label>
                         <input className="border py-2 px-3 text-grey-800" type="text"  {...register("packageName")} />
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="journeyPlace">Place To Journey</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="journeyPlace">Place To Journey</label>
                         <input className="border py-2 px-3 text-grey-800" type="text" {...register("journeyPlace")} />
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="journeyDays">Journey Days</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="journeyDays">Journey Days</label>
                         <input className="border py-2 px-3 text-grey-800" type="number" {...register("JourneyDays")} />
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="packagePrice">Packege Price</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="packagePrice">Packege Price</label>
                         <input className="border py-2 px-3 text-grey-800" type="number"{...register("price")} />
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="image">Image Link</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="image">Image Link</label>
                         <input className="border py-2 px-3 text-grey-800" {...register("imageUrl")} />
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="Date">Date</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="Date">Date</label>
                         <input className="border py-2 px-3 text-grey-800" type="date" {...register("date")} />
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="packageDescription">Package Description</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="packageDescription">Package Description</label>
                         <textarea className="border py-2 px-3 text-grey-800" {...register("description")} ></textarea>
                     </div>
                     <div className="flex flex-col mb-4">
-                        <label className="mb-2 font-bold text-lg text-gray-900" for="hotels">Hotels</label>
+                        <label className="mb-2 font-bold text-lg text-gray-900" htmlFor="hotels">Hotels</label>
                         <select className="border py-2 px-3 text-grey-800" {...register("hotetCategory")} >
                             <option>Standard Package(3 Star)</option>
                             <option>Superio Package(4 Star)</option>

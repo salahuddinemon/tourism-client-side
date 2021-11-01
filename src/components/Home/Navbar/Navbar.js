@@ -105,7 +105,7 @@ const Navbar = () => {
 
                     {/* Display Banner  */}
                     <div>
-                        <img src={banner} alt="" />
+                        <img className="w-full	" src={banner} alt="" />
                     </div>
                 </div>
             </section>
